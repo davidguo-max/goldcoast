@@ -37,7 +37,7 @@ export default function Home() {
 
   // CRM 数据
   const [students, setStudents] = useState([])
-  const [settings] = useState({ defaultBonus: 500, bonusOptions: [250, 500] })
+  const [settings] = useState({ defaultBonus: 1, bonusOptions: [0.5, 1] })
   const [loading, setLoading] = useState(true)
   const [activeTab, setActiveTab] = useState("students")
   const [modalOpen, setModalOpen] = useState(false)
