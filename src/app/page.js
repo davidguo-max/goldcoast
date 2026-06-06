@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { supabase } from '@/lib/supabase'
 
 const STATUSES = ["Lead", "Consultation", "Applied", "Offer", "Deposit Paid", "Enrolled", "Lost"]
-const SOURCES = ["Referral", "Xiaohongshu", "Wechat", "Walk-in", "Website", "Friend", "Other"]
+const SOURCES = ["Xiaohongshu", "Wechat", "Walkin", "Subagent", "Friend", "Other"]
 const COUNSELLORS = ["Counsellor 1", "Counsellor 2", "Counsellor 3", "Counsellor 4"]
 const BONUS_STATUSES = ["Unpaid", "Ready for Bonus", "Paid"]
 
