@@ -5,7 +5,7 @@ import { supabase } from '@/lib/supabase'
 
 const STATUSES = ["Lead", "Consultation", "Applied", "Offer", "Deposit Paid", "Enrolled", "Lost"]
 const SOURCES = ["Referral", "Xiaohongshu", "Wechat", "Walk-in", "Website", "Friend", "Other"]
-const COUNSELLORS = ["David", "Ming", "Jett"]
+const COUNSELLORS = ["Counsellor 1", "Counsellor 2", "Counsellor 3", "Counsellor 4"]
 const BONUS_STATUSES = ["Unpaid", "Ready for Bonus", "Paid"]
 
 // 简单的密码验证
@@ -13,11 +13,12 @@ function verifyLogin(name, password) {
   if (name === "Manager" && password === "admin123") {
     return { role: "manager", counsellor: null }
   }
-  // 顧問密碼
+  // 顧問密碼（隨機生成）
   const counsellorPasswords = {
-    "David": "ozsky2022",
-    "Ming": "ozsky0722",
-    "Jett": "Ozsky2025"
+    "Counsellor 1": "817497C0",
+    "Counsellor 2": "172BEADB",
+    "Counsellor 3": "8E919AC2",
+    "Counsellor 4": "349F9C24"
   }
   if (COUNSELLORS.includes(name) && counsellorPasswords[name] === password) {
     return { role: "counsellor", counsellor: name }
