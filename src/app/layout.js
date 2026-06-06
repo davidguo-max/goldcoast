@@ -1,5 +1,5 @@
 export const metadata = {
-  title: '留学招生 CRM',
+  title: 'Gold Coast留学 CRM',
   description: 'Supabase 版 CRM',
 }
 

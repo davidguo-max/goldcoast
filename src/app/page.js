@@ -469,7 +469,7 @@ export default function Home() {
     return (
       <div className="page" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '100vh' }}>
         <div className="card" style={{ maxWidth: '400px', width: '100%', padding: '32px' }}>
-          <h1 style={{ textAlign: 'center', marginBottom: '8px' }}>留学招生 CRM</h1>
+          <h1 style={{ textAlign: 'center', marginBottom: '8px' }}>Gold Coast留学 CRM</h1>
           <p style={{ textAlign: 'center', color: '#64748b', marginBottom: '24px' }}>请登录</p>
 
           <form onSubmit={handleLogin}>
@@ -522,7 +522,7 @@ export default function Home() {
       {/* Header */}
       <div className="header card">
         <div>
-          <h1>留学招生 CRM</h1>
+          <h1>Gold Coast留学 CRM</h1>
           <p>{user.role === "manager" ? "管理员视图 - 查看全部数据" : `顾问视图 - ${user.counsellor}`}</p>
         </div>
         <div className="header-actions">
