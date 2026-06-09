@@ -433,7 +433,7 @@ export default function Home() {
   }
 
   function currency(n) {
-    return new Intl.NumberFormat("en-AU", { style: "currency", currency: "AUD", maximumFractionDigits: 0 }).format(Number(n || 0))
+    return new Intl.NumberFormat("en-AU", { style: "currency", currency: "AUD", maximumFractionDigits: 2 }).format(Number(n || 0))
   }
 
   function fmtDateTime(v) {
