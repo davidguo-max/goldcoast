@@ -32,7 +32,7 @@ CREATE TABLE students (
   status TEXT,
   intake_date DATE,
   tuition INTEGER DEFAULT 0,
-  bonus INTEGER DEFAULT 500,
+  bonus DECIMAL(10,2) DEFAULT 1,
   bonus_status TEXT DEFAULT 'Unpaid',
   paid_at TIMESTAMPTZ,
   notes TEXT,
