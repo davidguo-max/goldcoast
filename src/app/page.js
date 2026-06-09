@@ -203,7 +203,7 @@ export default function Home() {
       s.intake_date || '',
       s.visa_expiry_date || '',
       s.tuition || 0,
-      s.bonus || 500,
+      s.bonus || settings.defaultBonus,
       s.bonus_status || 'Unpaid',
       s.paid_at ? fmtDateTime(s.paid_at) : '',
       (s.notes || '').replace(/"/g, '""'),
@@ -249,7 +249,7 @@ export default function Home() {
         <td>${s.intake_date || ''}</td>
         <td>${s.visa_expiry_date || ''}</td>
         <td>${s.tuition || 0}</td>
-        <td>${s.bonus || 500}</td>
+        <td>${s.bonus || settings.defaultBonus}</td>
         <td>${s.bonus_status || 'Unpaid'}</td>
         <td>${s.paid_at ? fmtDateTime(s.paid_at) : ''}</td>
         <td>${(s.notes || '').replace(/</g, '&lt;').replace(/>/g, '&gt;')}</td>
